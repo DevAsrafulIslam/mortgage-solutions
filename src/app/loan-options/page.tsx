@@ -10,19 +10,25 @@ const loanOptions = [
         title: 'Fixed Rate Mortgage',
         description: 'Stable monthly payments with locked interest rate',
         rate: '6.5%',
-        term: '30 Years'
+        term: '30 Years',
+        apr: '6.7% APR',
+        conditions: 'Rates subject to credit approval. Terms and conditions apply.'
     },
     {
         title: 'Adjustable Rate Mortgage',
         description: 'Lower initial rates that may change over time',
         rate: '5.8%',
-        term: '5/1 ARM'
+        term: '5/1 ARM',
+        apr: '6.1% APR',
+        conditions: 'Initial rate fixed for 5 years, then adjusts annually. Rates subject to credit approval.'
     },
     {
         title: 'FHA Loan',
         description: 'Government-backed loans with lower down payments',
         rate: '6.2%',
-        term: '30 Years'
+        term: '30 Years',
+        apr: '6.4% APR',
+        conditions: 'FHA loans require mortgage insurance. Rates subject to credit approval and FHA guidelines.'
     }
 ]
 
@@ -73,6 +79,18 @@ export default function LoanOptions() {
                 >
                     Continue with Selected Loan
                 </Button>
+            </div>
+
+            <div className="mt-8 max-w-4xl mx-auto bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Important Rate Disclosures</h3>
+                <div className="text-sm text-gray-600 space-y-2">
+                    <p>• Rates shown are for illustrative purposes only and are not guaranteed.</p>
+                    <p>• Actual rates may vary based on credit score, loan-to-value ratio, loan amount, property type, and other factors.</p>
+                    <p>• Annual Percentage Rate (APR) includes estimated fees and costs.</p>
+                    <p>• All loans are subject to credit approval and property approval.</p>
+                    <p>• Additional terms and conditions apply. Contact us for current rates and terms.</p>
+                    <p>• Freedom Mortgage Solutions LLC is an equal housing lender. NMLS #275999</p>
+                </div>
             </div>
         </div>
     )

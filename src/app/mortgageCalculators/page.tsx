@@ -79,8 +79,8 @@ export default function MortgageCalculator() {
                                     <span className="text-emerald-600 font-medium">${downPayment.toLocaleString()}</span>
                                 </div>
                                 <div className="relative w-full h-2 bg-gray-200 rounded-lg mt-2">
-                                    <div 
-                                        className="absolute h-2 bg-teal-500 rounded-lg" 
+                                    <div
+                                        className="absolute h-2 bg-teal-500 rounded-lg"
                                         style={{ width: `${(downPayment / purchasePrice) * 100}%` }}
                                     />
                                     <input
@@ -101,8 +101,8 @@ export default function MortgageCalculator() {
                                     <span className="text-emerald-600 font-medium">{interestRate}%</span>
                                 </div>
                                 <div className="relative w-full h-2 bg-gray-200 rounded-lg mt-2">
-                                    <div 
-                                        className="absolute h-2 bg-teal-500 rounded-lg" 
+                                    <div
+                                        className="absolute h-2 bg-teal-500 rounded-lg"
                                         style={{ width: `${(interestRate / 15) * 100}%` }}
                                     />
                                     <input
@@ -123,8 +123,8 @@ export default function MortgageCalculator() {
                                     <span className="text-emerald-600 font-medium">{mortgageInsuranceRate}%</span>
                                 </div>
                                 <div className="relative w-full h-2 bg-gray-200 rounded-lg mt-2">
-                                    <div 
-                                        className="absolute h-2 bg-teal-500 rounded-lg" 
+                                    <div
+                                        className="absolute h-2 bg-teal-500 rounded-lg"
                                         style={{ width: `${(mortgageInsuranceRate / 5) * 100}%` }}
                                     />
                                     <input
@@ -145,8 +145,8 @@ export default function MortgageCalculator() {
                                     <span className="text-emerald-600 font-medium">${annualTaxes.toLocaleString()}</span>
                                 </div>
                                 <div className="relative w-full h-2 bg-gray-200 rounded-lg mt-2">
-                                    <div 
-                                        className="absolute h-2 bg-teal-500 rounded-lg" 
+                                    <div
+                                        className="absolute h-2 bg-teal-500 rounded-lg"
                                         style={{ width: `${(annualTaxes / 20000) * 100}%` }}
                                     />
                                     <input
@@ -191,17 +191,17 @@ export default function MortgageCalculator() {
                 <div className="bg-gradient-to-br from-blue-600 to-sky-700 text-white p-8 rounded-3xl shadow-xl">
                     <div className="text-center mb-12">
                         <p className="text-blue-100 mb-2">Monthly Payment</p>
-                        <h2 className="text-5xl font-bold">${totalPayment.toLocaleString(undefined, {maximumFractionDigits: 0})}</h2>
+                        <h2 className="text-5xl font-bold">${totalPayment.toLocaleString(undefined, { maximumFractionDigits: 0 })}</h2>
                     </div>
 
                     <div className="space-y-4">
                         <div className="flex justify-between items-center py-3 border-b border-blue-400/30 hover:bg-blue-500/10 transition-colors">
                             <span className="text-blue-100">Principal & Interest</span>
-                            <span className="font-semibold">${principalAndInterest.toLocaleString(undefined, {maximumFractionDigits: 0})}</span>
+                            <span className="font-semibold">${principalAndInterest.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
                         </div>
                         <div className="flex justify-between items-center py-3 border-b border-blue-400/30 hover:bg-blue-500/10 transition-colors">
                             <span className="text-blue-100">Monthly Taxes</span>
-                            <span className="font-semibold">${monthlyTaxes.toLocaleString(undefined, {maximumFractionDigits: 0})}</span>
+                            <span className="font-semibold">${monthlyTaxes.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
                         </div>
                         <div className="flex justify-between items-center py-3 border-b border-blue-400/30 hover:bg-blue-500/10 transition-colors">
                             <span className="text-blue-100">Monthly HOA</span>
@@ -209,11 +209,11 @@ export default function MortgageCalculator() {
                         </div>
                         <div className="flex justify-between items-center py-3 border-b border-blue-400/30 hover:bg-blue-500/10 transition-colors">
                             <span className="text-blue-100">Monthly Insurance</span>
-                            <span className="font-semibold">${monthlyInsurance.toLocaleString(undefined, {maximumFractionDigits: 0})}</span>
+                            <span className="font-semibold">${monthlyInsurance.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
                         </div>
                         <div className="flex justify-between items-center py-3 hover:bg-blue-500/10 transition-colors">
                             <span className="text-blue-100">Monthly PMI</span>
-                            <span className="font-semibold">${monthlyPMI.toLocaleString(undefined, {maximumFractionDigits: 0})}</span>
+                            <span className="font-semibold">${monthlyPMI.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
                         </div>
                     </div>
 

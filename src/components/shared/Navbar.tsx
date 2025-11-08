@@ -34,14 +34,14 @@ const Navbar = () => {
                                 className="flex items-center space-x-2"
                             >
                                 <Image
-                                    src="/logo.jpeg"
+                                    src="/logo.png"
                                     alt=""
-                                    width={32}
-                                    height={32}
-                                    className="h-8"
+                                    width={60}
+                                    height={60}
+                                    className="h-16"
                                 />
                                 <span className="text-lg md:text-2xl font-bold bg-gradient-to-r from-emerald-600 to-cyan-600 bg-clip-text text-transparent whitespace-nowrap">
-                                    Freedom Mortgage Solutions
+                                    Freedom Mortgage Solutions LLC
                                 </span>
                             </Link>
                         </div>
@@ -80,11 +80,11 @@ const Navbar = () => {
 
                         {/* color switch and login button */}
                         <div className="hidden md:flex items-center space-x-4">
-                            <button className="p-2 rounded-full hover:bg-gray-100">
+                            {/* <button className="p-2 rounded-full hover:bg-gray-100">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                                 </svg>
-                            </button>
+                            </button> */}
                             <button
                                 onClick={openModal}
                                 className="bg-emerald-600 text-white px-6 py-2 rounded-full hover:bg-emerald-700 transition-colors"

@@ -30,6 +30,7 @@ export default function Contact() {
             const publicKey = "5XUYzxhDN4CrtHgF0";
 
             const templateParams = {
+                to_email: "kyle@myfreedomloan.com",
                 fullName: formData.fullName,
                 email: formData.email,
                 subject: formData.subject,
@@ -78,8 +79,8 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h2 className="text-lg sm:text-xl font-semibold text-gray-800">Email</h2>
-                                        <a href="mailto:signup@myfreedomloan.com" className="text-blue-600 hover:text-blue-700 transition break-all">
-                                            signup@myfreedomloan.com
+                                        <a href="mailto:info@myfreedomloan.com" className="text-blue-600 hover:text-blue-700 transition break-all">
+                                            info@myfreedomloan.com
                                         </a>
                                     </div>
                                 </div>
@@ -95,7 +96,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h2 className="text-lg sm:text-xl font-semibold text-gray-800">Mortgage Hotline</h2>
-                                        <p className="text-gray-600">1-2487070045</p>
+                                        <p className="text-gray-600">(248) 579-5499</p>
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +112,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h2 className="text-lg sm:text-xl font-semibold text-gray-800">Main Office</h2>
-                                        <p className="text-gray-600">3520 Pontiac Lake Rd<br />Waterford, MI 48328<br />United States</p>
+                                        <p className="text-gray-600">3530 Pontiac Lake Road<br />Waterford, Michigan 48328</p>
                                     </div>
                                 </div>
                             </div>
@@ -126,8 +127,8 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h2 className="text-lg sm:text-xl font-semibold text-gray-800">NMLS Info</h2>
-                                        <a href="#" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-700 transition">
-                                            NMLS ID: #123456
+                                        <a href="https://www.nmlsconsumeraccess.org/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-700 transition">
+                                            NMLS ID: #275999
                                         </a>
                                     </div>
                                 </div>
@@ -197,6 +198,22 @@ export default function Contact() {
                                 >
                                     {status === "submitting" ? "Sending..." : "Submit Inquiry"}
                                 </button>
+
+                                {/* Data Collection Notice */}
+                                <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                                    <div className="flex items-start">
+                                        <div className="flex-shrink-0">
+                                            <svg className="h-4 w-4 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                            </svg>
+                                        </div>
+                                        <div className="ml-2 text-xs text-blue-700">
+                                            <p className="font-medium mb-1">Privacy & Security Notice</p>
+                                            <p>Your information is encrypted and transmitted securely. We will only use your contact information to respond to your inquiry and will not share it with third parties without your consent. By submitting this form, you consent to our <a href="/privacy" className="underline hover:text-blue-800">privacy policy</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p className="text-xs text-gray-500 mt-2 text-center">By submitting this form, you consent to receive calls, texts, or emails from Freedom Mortgage Solutions LLC at the number provided, even if on a Do-Not-Call list. Consent is not required to apply.</p>
                             </form>
                         </div>
                     </div>

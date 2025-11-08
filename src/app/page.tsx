@@ -16,8 +16,9 @@ const HomePage = () => {
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-6 md:space-y-8">
               <div>
-                <h1 className="text-3xl mt-12 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold">
+                <h1 className="text-3xl mt-15 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold">
                   <span className="block text-gray-900">Your Trusted</span>
+
                   <span className="block bg-gradient-to-r from-emerald-500 to-cyan-500 text-transparent bg-clip-text animate-gradient">
                     Home Loan Partner
                   </span>
@@ -26,7 +27,10 @@ const HomePage = () => {
               </div>
 
               <p className="text-gray-600 text-base md:text-lg">
-                We provide expert advice and a wide range of home loan programs tailored to your needs. Our experienced team has earned a reputation for excellence with 5-star reviews from satisfied clients. Unlock your dream home with us today!
+                We provide expert advice and a wide range of home loan programs tailored to your needs. Our experienced team has earned a reputation for excellence with reviews from satisfied clients. Unlock your dream home with us today!
+              </p>
+              <p className="text-xs text-gray-500 mt-2">
+                *Results may vary. Testimonials reflect the experience of individual customers and do not guarantee similar results.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
@@ -75,6 +79,24 @@ const HomePage = () => {
       </div>
 
       <MortgageCalculator />
+
+      {/* Advertising Disclosure */}
+      <div className="py-8 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">Important Disclosures</h3>
+              <div className="text-sm text-gray-600 space-y-2">
+                <p>• All loan programs are subject to credit and property approval.</p>
+                <p>• Rates and terms are subject to change without notice.</p>
+                <p>• Not all applicants will qualify for all loan programs.</p>
+                <p>• Additional terms, conditions, and restrictions may apply.</p>
+                <p>• Freedom Mortgage Solutions LLC is an Equal Housing Lender. NMLS #275999</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Loan Programs Section */}
       <div className="py-12 md:py-20 bg-gray-50">
