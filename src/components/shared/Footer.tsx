@@ -117,15 +117,6 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-
-                    <div className="space-y-4">
-                        <h3 className="text-lg sm:text-xl font-bold border-b-2 border-emerald-500 pb-2 inline-block">Security</h3>
-                        <ul className="space-y-2 text-sm sm:text-base text-gray-300">
-                            <li>✓ This site uses SSL encryption</li>
-                            <li>✓ Secure data transmission</li>
-                            <li>✓ Privacy protected</li>
-                        </ul>
-                    </div>
                 </div>
 
                 <div className="border-t border-gray-700 mt-8 sm:mt-6 pt-6 sm:pt-8 text-center text-white">
