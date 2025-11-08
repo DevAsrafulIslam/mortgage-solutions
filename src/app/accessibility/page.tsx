@@ -6,7 +6,7 @@ const Accessibility = () => {
       <div className="max-w-5xl mx-auto">
         <header className="mb-12 text-center">
           <h1 className="text-5xl font-bold text-slate-900 mt-4 mb-2">Accessibility Statement</h1>
-          <p className="text-slate-500 text-sm">Last updated: {new Date().toLocaleDateString()}</p>
+          <p className="text-slate-500 text-sm">Last updated: 10/26/2024</p>
         </header>
 
         <div className="grid gap-8 md:grid-cols-2">

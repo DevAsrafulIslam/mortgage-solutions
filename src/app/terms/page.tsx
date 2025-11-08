@@ -8,7 +8,7 @@ const TermsOfService: React.FC = () => {
                     <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-3">
                         Terms of Service
                     </h1>
-                    <p className="text-slate-500 text-base">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                    <p className="text-slate-500 text-base">Last updated: October 26, 2023</p>
                 </header>
 
                 <div className="space-y-10">
@@ -36,7 +36,7 @@ const TermsOfService: React.FC = () => {
                     <section>
                         <h2 className="text-2xl md:text-3xl font-semibold text-slate-800 mb-3">4. Disclaimer of Warranties</h2>
                         <p className="text-slate-600 leading-relaxed">
-                            The website is provided on an "as is" and "as available" basis. Freedom Mortgage Solutions makes no representations or warranties of any kind, express or implied, as to the operation of the website, or the information, content, or materials included on the website.
+                            The website is provided on an as is and as available basis. Freedom Mortgage Solutions makes no representations or warranties of any kind, express or implied, as to the operation of the website, or the information, content, or materials included on the website.
                         </p>
                     </section>
 

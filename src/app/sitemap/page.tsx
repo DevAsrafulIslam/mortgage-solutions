@@ -37,11 +37,7 @@ const Sitemap = () => {
                                         Loan Options
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/mortgageCalculators" className="text-gray-700 hover:text-[#00529B] transition-colors duration-200">
-                                        Mortgage Calculators
-                                    </Link>
-                                </li>
+
                                 <li>
                                     <Link href="/contact" className="text-gray-700 hover:text-[#00529B] transition-colors duration-200">
                                         Contact

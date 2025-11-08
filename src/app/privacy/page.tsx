@@ -1,11 +1,7 @@
 import React from 'react';
 
 const PrivacyPolicy: React.FC = () => {
-    const effectiveDate = new Date().toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-    });
+    const effectiveDate = 'October 26, 2023';
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-16 px-4 sm:px-6 lg:px-8">

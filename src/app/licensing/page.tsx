@@ -7,7 +7,7 @@ const Licensing = () => {
                     <h1 className="text-4xl font-bold text-gray-900 mb-4">
                         Licensing & State Disclosures
                     </h1>
-                    <p className="text-gray-600 text-sm">Last updated: {new Date().toLocaleDateString()}</p>
+                    <p className="text-gray-600 text-sm">Last updated: 10/26/2023</p>
                 </div>
                 <div className="space-y-8">
                     <section className="border-l-4 border-blue-500 pl-6">
