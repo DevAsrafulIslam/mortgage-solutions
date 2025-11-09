@@ -36,34 +36,35 @@ export default function LoanOptions() {
     const [selectedLoan, setSelectedLoan] = useState<number | null>(null)
 
     return (
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl mt-12 font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <div className="max-w-7xl mx-auto py-8 px-4 mt-6 sm:px-6 lg:px-8">
+            <h1 className="text-3xl sm:text-4xl mt-8 sm:mt-12 font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Explore Loan Options
             </h1>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
                 {loanOptions.map((loan, index) => (
                     <motion.div
                         key={index}
                         whileHover={{ scale: 1.02 }}
                         transition={{ duration: 0.2 }}
+                        className="w-full"
                     >
                         <Card
-                            className={`cursor-pointer transition-all duration-300 ${selectedLoan === index ? 'border-2 border-blue-500 shadow-lg' : ''
+                            className={`cursor-pointer transition-all duration-300 h-full ${selectedLoan === index ? 'border-2 border-blue-500 shadow-lg' : ''
                                 }`}
                             onClick={() => setSelectedLoan(index)}
                         >
-                            <CardContent className="p-6">
-                                <h2 className="text-2xl font-semibold mb-3">{loan.title}</h2>
-                                <p className="text-gray-600 mb-4">{loan.description}</p>
+                            <CardContent className="p-4 sm:p-6">
+                                <h2 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3">{loan.title}</h2>
+                                <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">{loan.description}</p>
                                 <div className="flex justify-between items-center">
                                     <div>
-                                        <p className="text-3xl font-bold text-blue-600">{loan.rate}</p>
-                                        <p className="text-sm text-gray-500">Interest Rate</p>
+                                        <p className="text-2xl sm:text-3xl font-bold text-blue-600">{loan.rate}</p>
+                                        <p className="text-xs sm:text-sm text-gray-500">Interest Rate</p>
                                     </div>
                                     <div className="text-right">
-                                        <p className="text-lg font-semibold">{loan.term}</p>
-                                        <p className="text-sm text-gray-500">Term</p>
+                                        <p className="text-base sm:text-lg font-semibold">{loan.term}</p>
+                                        <p className="text-xs sm:text-sm text-gray-500">Term</p>
                                     </div>
                                 </div>
                             </CardContent>
@@ -72,18 +73,18 @@ export default function LoanOptions() {
                 ))}
             </div>
 
-            <div className="mt-12 text-center">
+            <div className="mt-8 sm:mt-12 text-center">
                 <Button
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-300"
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 w-full sm:w-auto"
                     disabled={selectedLoan === null}
                 >
                     Continue with Selected Loan
                 </Button>
             </div>
 
-            <div className="mt-8 max-w-4xl mx-auto bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Important Rate Disclosures</h3>
-                <div className="text-sm text-gray-600 space-y-2">
+            <div className="mt-6 sm:mt-8 max-w-4xl mx-auto bg-gray-50 p-4 sm:p-6 rounded-lg">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">Important Rate Disclosures</h3>
+                <div className="text-xs sm:text-sm text-gray-600 space-y-1 sm:space-y-2">
                     <p>• Rates shown are for illustrative purposes only and are not guaranteed.</p>
                     <p>• Actual rates may vary based on credit score, loan-to-value ratio, loan amount, property type, and other factors.</p>
                     <p>• Annual Percentage Rate (APR) includes estimated fees and costs.</p>

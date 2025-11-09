@@ -3,7 +3,7 @@ import React from 'react';
 
 const Sitemap = () => {
     return (
-        <div className="min-h-screen mt-22 bg-white">
+        <div className="min-h-screen mt-20 md:mt-22 bg-white">
             {/* Hero Section */}
             <section className=" bg-gradient-to-r from-slate-500 to-slate-600 text-white text-white py-12 px-6">
                 <div className="max-w-4xl mx-auto text-center">
@@ -15,9 +15,9 @@ const Sitemap = () => {
             {/* Main Content */}
             <section className="py-16 px-6 bg-gray-50">
                 <div className="max-w-5xl mx-auto">
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                         {/* Main Pages */}
-                        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 md:p-6">
                             <h2 className="text-lg font-semibold text-[#002D62] mb-4 border-b border-gray-200 pb-3">
                                 Main Pages
                             </h2>
@@ -47,7 +47,7 @@ const Sitemap = () => {
                         </div>
 
                         {/* Legal Pages */}
-                        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 md:p-6">
                             <h2 className="text-lg font-semibold text-[#002D62] mb-4 border-b border-gray-200 pb-3">
                                 Legal Pages
                             </h2>
@@ -76,7 +76,7 @@ const Sitemap = () => {
                         </div>
 
                         {/* Application */}
-                        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 md:p-6">
                             <h2 className="text-lg font-semibold text-[#002D62] mb-4 border-b border-gray-200 pb-3">
                                 Application
                             </h2>

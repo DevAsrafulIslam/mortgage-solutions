@@ -123,7 +123,7 @@ const Footer = () => {
                 <div className="border-t border-gray-700 mt-8 sm:mt-6 pt-6 sm:pt-8 text-center text-white">
                     {/* Company Logo in Footer */}
                     <div className="flex justify-center items-center mb-4">
-                        <img src="/logo.png" alt="Freedom Mortgage Solutions LLC" className="h-20 mr-2" width="60" height="60" />
+                        <img src="/logo.jpeg" alt="Freedom Mortgage Solutions LLC" className="h-15 mr-2 rounded-sm" width="60" height="60" />
                     </div>
                     <p className="text-xs sm:text-sm mb-4">We do not discriminate on the basis of race, color, religion, national origin, sex, handicap, or familial status.</p>
                     <p className="text-sm sm:text-base">© 2025 Freedom Mortgage Solutions LLC. All rights reserved.</p>
