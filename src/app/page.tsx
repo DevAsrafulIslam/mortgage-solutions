@@ -96,8 +96,6 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
-      {/* Rest of the sections... */}
     </>
   )
 }
