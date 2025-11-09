@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { FaPhone, FaMapMarkerAlt, FaEnvelope, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa'
 
@@ -128,11 +128,11 @@ const Footer = () => {
                     <p className="text-xs sm:text-sm mb-4">We do not discriminate on the basis of race, color, religion, national origin, sex, handicap, or familial status.</p>
                     <p className="text-sm sm:text-base">© 2025 Freedom Mortgage Solutions LLC. All rights reserved.</p>
                     <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-6 mt-4">
-                        <a href="/privacy" className="hover:text-emerald-400 transition-colors text-sm sm:text-base">Privacy Policy</a>
-                        <a href="/terms" className="hover:text-emerald-400 transition-colors text-sm sm:text-base">Terms of Service</a>
-                        <a href="/licensing" className="hover:text-emerald-400 transition-colors text-sm sm:text-base">Licensing & State Disclosures</a>
-                        <a href="/accessibility" className="hover:text-emerald-400 transition-colors text-sm sm:text-base">Accessibility</a>
-                        <a href="/sitemap" className="hover:text-emerald-400 transition-colors text-sm sm:text-base">Sitemap</a>
+                        <Link href="/privacy" className="hover:text-emerald-400 transition-colors text-sm sm:text-base">Privacy Policy</Link>
+                        <Link href="/terms" className="hover:text-emerald-400 transition-colors text-sm sm:text-base">Terms of Service</Link>
+                        <Link href="/licensing" className="hover:text-emerald-400 transition-colors text-sm sm:text-base">Licensing & State Disclosures</Link>
+                        <Link href="/accessibility" className="hover:text-emerald-400 transition-colors text-sm sm:text-base">Accessibility</Link>
+                        <Link href="/sitemap" className="hover:text-emerald-400 transition-colors text-sm sm:text-base">Sitemap</Link>
                     </div>
                     <p className="mt-4 text-xs sm:text-sm">NMLS #275999</p>
                     <a href="https://www.nmlsconsumeraccess.org/" className="hover:text-emerald-400 transition-colors text-sm sm:text-base">www.nmlsconsumeraccess.org</a>
