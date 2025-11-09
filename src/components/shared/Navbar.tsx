@@ -1,7 +1,6 @@
 "use client"
 import Link from 'next/link'
 import React, { useState } from 'react'
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import ApplicationModal from '@/app/application-modal/page';
 
@@ -33,9 +32,9 @@ const Navbar = () => {
                                 href="/"
                                 className="flex items-center space-x-2"
                             >
-                                <Image
+                                <img
                                     src="/logo.png"
-                                    alt=""
+                                    alt="Freedom Mortgage Solutions LLC Logo"
                                     width={60}
                                     height={60}
                                     className="h-16"
